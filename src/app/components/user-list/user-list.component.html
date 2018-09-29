@@ -1,4 +1,24 @@
-<section class="row container-fluid">
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users; let i =index;">
+      <th  scope="row">{{i+1}}</th>
+      <td>{{user.name}}</td>
+      <td>{{user.type}}</td>
+      <td>{{user.username}}</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<!-- <section class="row container-fluid">
   <div class="col-md-2" style="padding: 10px 0px 10px 20px;">
     <h2>Users</h2>
   </div>
@@ -81,4 +101,6 @@
       <i class="fa fa-user"></i>
     </div>
   </div>
-</div>
+</div> -->
+
+
